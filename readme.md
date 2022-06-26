@@ -1,3 +1,3 @@
 # Go Lang Notes
 
-Go lang is a popular language. It is compilable. It is a concurrent language.
+This repo contains examples and notes which i wrote when i learn Go Lang.

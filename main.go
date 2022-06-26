@@ -4,12 +4,12 @@ import (
 	"fmt"
 )
 
-func helloWorld(name string) {
-	fmt.Println("Hello, world! My name is", name)
+func helloWorld(name string) string {
+	return "Hello, world! My name is " + name + "."
 }
 
 func main() {
 
-	helloWorld("Go Lang")
+	fmt.Println(helloWorld("Go Lang"))
 
 }
