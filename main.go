@@ -46,4 +46,23 @@ func main() {
 
 	fmt.Println(phones)
 
+	// loops
+	for i := 0; i < len(numbers); i++ {
+		fmt.Println(numbers[i])
+	}
+
+	j := 0 // using like while loop
+	for j < 5 {
+		fmt.Println("j is ", j)
+		j++
+	}
+
+	/*
+		- another loop usage with a slice (or array)
+		- change index to key for using with a map
+	*/
+	for index, value := range strings {
+		fmt.Println("index", index, "value", value)
+	}
+
 }
