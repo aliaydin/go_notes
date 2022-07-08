@@ -15,6 +15,7 @@ func main() {
 	//call a function as a parameter in calling another function
 	fmt.Println(helloWorld("Go Lang"))
 
+	fmt.Println("\n*** Variables ***")
 	//define variables
 	var count int
 	var age int = 25
@@ -22,6 +23,7 @@ func main() {
 
 	fmt.Println(count, age, pi)
 
+	fmt.Println("\n*** Control ***")
 	// if contiditon
 	if age >= 30 {
 		fmt.Println("You are old")
@@ -29,6 +31,7 @@ func main() {
 		fmt.Println("You are young")
 	}
 
+	fmt.Println("\n*** Array / Slice ***")
 	// array / slice
 	numbers := [5]int{4, 7, 1, 5, 2}                  // fixed size array
 	strings := []string{"aa", "bb", "cc", "dd", "ee"} // a slice
@@ -38,6 +41,7 @@ func main() {
 	fmt.Println(numbers)
 	fmt.Printf("%q\n", strings)
 
+	fmt.Println("\n*** Map ***")
 	// map
 	phones := make(map[string]int) // map[<key type>]<value type>
 
@@ -46,6 +50,22 @@ func main() {
 
 	fmt.Println(phones)
 
+	fmt.Println("\n*** Struct ***")
+	// struct
+	type Address struct {
+		name, street, city, state string
+		zipcode                   int
+	}
+
+	var myAddress = Address{"home", "JFK Blv", "Jersey City", "NJ", 07450}
+	yourAddress := Address{"work", "Sip Ave", "Jersey City", "NJ", 07630} // short define
+
+	yourAddress.name = "your address"
+
+	fmt.Println(myAddress)
+	fmt.Println(yourAddress)
+
+	fmt.Println("\n*** Loops ***")
 	// loops
 	for i := 0; i < len(numbers); i++ {
 		fmt.Println(numbers[i])
