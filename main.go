@@ -85,4 +85,27 @@ func main() {
 		fmt.Println("index", index, "value", value)
 	}
 
+	fmt.Println("\n*** Switch ***")
+	// switch
+	switch result := 40; result {
+	case 50:
+		fmt.Println("result 50")
+	case 60:
+		fmt.Println("result 60")
+	case 70:
+		fmt.Println("result 70")
+	default:
+		fmt.Println("default result")
+	}
+
+	var heat int = 40
+	//swith without statement
+	switch {
+	case heat < 30:
+		fmt.Println("Cool")
+	case heat >= 30 && heat < 40:
+		fmt.Println("Hot")
+	case heat >= 40:
+		fmt.Println("Very hot")
+	}
 }
